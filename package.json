@@ -3,6 +3,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "prepublishOnly": "yarn setup",
     "clean": "lerna run clean --parallel && lerna clean -y && rm node_modules",
     "setup": "yarn && lerna run build --include-dependencies --stream && yarn",
     "fix:version": "syncpack fix-mismatches",
@@ -60,6 +61,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rxliuli/rx-util"
+    "url": "https://github.com/rxliuli/liuli-utils"
   }
 }
