@@ -3,7 +3,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "clean": "lerna run clean --parallel && lerna clean -y && rimraf node_modules",
+    "clean": "lerna run clean --parallel && lerna clean -y && rm node_modules",
     "setup": "yarn && lerna run build --include-dependencies --stream && yarn",
     "fix:version": "syncpack fix-mismatches",
     "gen:readme": "gulp generateReadmes",
@@ -12,15 +12,7 @@
     "docs:deploy": "yarn docs:build && gh-pages -d docs -t true",
     "test": "lerna run test --parallel"
   },
-  "prettier": {
-    "tabWidth": 2,
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "arrowParens": "always",
-    "endOfLine": "crlf"
-  },
+  "prettier": "@liuli-util/prettier-standard-config",
   "workspaces": {
     "packages": [
       "libs/*"
@@ -47,6 +39,8 @@
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
     "@liuli-util/cli": "^3.3.2",
+    "@liuli-util/shell": "^0.2.0",
+    "@liuli-util/prettier-standard-config": "^0.1.0",
     "@types/fs-extra": "^9.0.6",
     "@types/gulp": "^4.0.8",
     "@types/node": "^12.19.14",
@@ -62,8 +56,7 @@
     "ts-jest": "^26.4.4",
     "ts-node": "^9.1.1",
     "type-fest": "^1.1.1",
-    "typescript": "^4.1.3",
-    "rimraf": "^3.0.2"
+    "typescript": "^4.1.3"
   },
   "repository": {
     "type": "git",

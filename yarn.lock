@@ -637,11 +637,25 @@
     rollup-plugin-typescript2 "^0.29.0"
     typescript "^4.1.3"
 
+"@liuli-util/prettier-standard-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@liuli-util/prettier-standard-config/-/prettier-standard-config-0.1.0.tgz#d51cf2e788c03fccc19cce6f7da75262ee65c0d2"
+  integrity sha512-y0dbvdhqHtwo77kwFukn7HVdaojGgimmDM+QP3JB3SlLjdwePb7wLjr9UKqk3eNMFa3v5oIFGzEgK9L2mK7dWw==
+
 "@liuli-util/shell@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@liuli-util/shell/-/shell-0.1.0.tgz#8f3a9e422030e41d75b0d6490c16d880b0a7045b"
   integrity sha512-rqx2J1ZtkW450oQ3v3GVMMMZliQZjc61QR/9ALHfbYM0buWAxoXXaTjjmO4Wiq2FS6ge/MLkrTE4OX5iuXnhnQ==
   dependencies:
+    commander "^7.0.0"
+    fs-extra "^10.0.0"
+
+"@liuli-util/shell@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@liuli-util/shell/-/shell-0.2.0.tgz#747b2c2d44eaf8defc4dedb6b6e78c7ed4025ad3"
+  integrity sha512-I6+fkIFzhU6u66lYZ2uEbuEmfc0pDUoF3GP/vPmLO/91Jea6DC5ieHBuvCz/ck7O9dfOg0Zo5ab7Z3koDV98xA==
+  dependencies:
+    "@liuli-util/async" "^3.2.3"
     commander "^7.0.0"
     fs-extra "^10.0.0"
 
@@ -5457,7 +5471,7 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-rimraf@^3.0.0, rimraf@^3.0.2:
+rimraf@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
   integrity sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
